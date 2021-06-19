@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.slajdovi {
+    display: none;
+
+}
+
+body {
+    background: #f2f2f2;
+}
+
+.slajdovi  img{
+    height: 100vh;
+    width: 100%;
+}
+
+.text {
+    position: relative;
+    top: -350px;
+    text-align: center;
+}
+.text h1 {
+    font-size: 3.4rem;
+    color: #ffffff;
+    text-shadow: 5px 0 30px #000;
+}
+
+.text h3 {
+    font-size: 1.4rem;
+    color: #b1b1b1;
+    text-shadow: 5px 0 30px #000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 80px 0 80px;
+}
+.logo {
+    font-size: 1.7rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #6b6b6b;
+}
+
+nav ul li  {
+    display: inline-block;
+    margin-left: 30px;
+}
+ nav ul li a {
+   font-size: 1.4rem;
+   text-decoration: none;
+   color: #6b6b6b;
+}
+
+.card {
+    display: flex;
+    margin: 30px auto;
+   justify-content: center;
+    text-align: center;
+}
+
+.slika img {
+    height: 280px;
+    width: 100%;
+}
+
+.card article {
+    flex: 0 0 45%;
+}
+
+.card hr {
+    width: 440px;
+    margin-left: 90px;
+    border: none;
+    height: 2px;
+    background: #bababa;
+}
+
+.card article h4 {
+    letter-spacing: .25rem;
+    color: #6b6b6b;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.col-2 {
+    background: #ffffff;
+    margin-left: 50px;
+}
+
+.card article h1 {
+    font-size: 2rem;
+    margin-top: 10px;
+   margin-bottom: 15px;
+   color: rgb(62, 99, 99);
+}
+
+.card article p {
+  font-size: 1.1rem;
+  padding: 10px 70px;
+  color: #6b6b6b;
+  text-align: justify;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+.card article button {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    background: rgba(9, 9, 202, 0.809);
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .row  {
+      background-image: url(../slike/bg.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      margin-top: 70px;
+  }
+  .row article {
+      text-align: center;
+      color: #bababa;
+      text-shadow: 0 0 20px #000;
+      padding: 90px;
+  }
+
+.row article p {
+    letter-spacing: .19rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.row article hr {
+    width: 670px;
+    margin-left: 250px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+
+.row article h1 {
+    font-size: 2rem;
+}
+
+.img {
+    margin-top: 60px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.img p {
+    letter-spacing: .19rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #3d3d3d;
+}
+
+.img hgroup hr {
+    width: 850px;
+    margin-left: 240px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+
+.img hgroup h1 {
+    font-size: 2rem;
+    color: #6b6b6b;
+}
+
+.img-container article{
+    display: flex;
+    flex: 0 0 45%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.img-container article img{
+    margin-left: 70px;
+    outline: 14px solid #fff;
+    width: 40%;
+    height: 270px;
+}
+
+footer {
+    background: #000000;
+    height: 35vh;
+}
+
+
+footer p {
+    color: #f2f2f2;
+    font-size: 2rem;
+    text-align: center;  
+    padding-top: 100px;
+}
+
+@media (max-width: 400px) {
+    nav {
+        margin: 10px 0px 0 0px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+    nav .logo {
+        font-size: 1.2rem;
+    }
+
+    .slajdovi  img{
+        height: 80vh;
+        width: 100%;
+    }
+    .card {
+        
+        flex-wrap: wrap;
+    }
+
+    .card article {
+        flex: 0 0 90%;
+        margin-bottom: 70px;
+    }
+    .col-2 {
+        background: #ffffff;
+        margin-left: 0px;
+    }
+    .slika img {
+        height: 240px;
+        width: 100%;
+    }
+    .card  hr {
+        width: 240px;
+        margin-left: 60px;
+        border: none;
+        height: 2px;
+        background: #bababa;
+    }
+
+    .row article hr {
+        width: 200px;
+        margin-left: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .img hgroup hr {
+        width: 200px;
+        margin-left: 90px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .img-container article {
+        display: flex;
+        flex: 0 0 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 70px;
+        width: 100%;
+       
+        flex-wrap: wrap;
+    }
+
+    .img-container article img {
+        margin: auto;
+        outline: 14px solid #fff;
+        width: 40%;
+        height: 270px;
+    }
+}
